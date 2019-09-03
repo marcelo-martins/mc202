@@ -1,0 +1,107 @@
+Marcelo Biagi Martins 183303
+
+Exercício 1-
+A impressão de lac4 é 
+"Teste (ID: 12)
+Ataque = 0
+Vida Atual = 0
+Vida Maxima = 0
+Custo de Mana = 15"
+
+Os atributos não incializados ficaram com valor 0. Isso acontece porque a linguagem java insere os valores padrão para cada tipo de atributo quando o usuário não os incializa. No caso, o valor padrão de um valor inteiro é 0.
+
+Exercício 2-
+A impressão de lac1 é
+"Exercício 2:
+FrodoBolseiro (ID: 1)
+Ataque = 8
+Vida Atual = 1
+Vida Maxima = 1
+Custo de Mana = 1"
+
+Exercício 3-
+Pela definição do método toString, temos:
+"public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+    }"
+Sendo que a impressão do programa foi: "lab01.CartaMagia@15db9742". Logo, ao comentar a toString, o programa imprime o codigo hash.
+
+Exercício 4-
+A impressão foi:
+"Lac2:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6
+
+Lac5:
+Aragorn (ID: 2)
+Ataque = 5
+Vida Atual = 7
+Vida Maxima = 7
+Custo de Mana = 6"
+
+Além da posição de memória, não há diferença entre os objetos.
+
+Exercício 5-
+A impressão da classe quando "nome" está public é:
+"Youshallnotpass
+Youshallnotpass"
+Ao mudar a visibilidade de "nome" para private, o programa apresenta um erro de compilação e não imprime os dados.Isso porque um atributo "private" apenas é visível dentro da sua classe e ,por isso, não conseguimos imprimí-lo na main.
+
+O objetivo dos atributos privados é "esconder" e controlar os elementos, pois uma variável private não pode ser acessada fora de sua classe. Depois, para modificar esses atributos, usamos os métodos "get" e "set", que são públicos e permitem o acesso às variáveis privadas.
+
+Exercício 6- A saída será:
+"FrodoBolseiro (ID: 1)
+Ataque = 2
+Vida Atual = 1
+Vida Maxima = 1
+Custo de Mana = 1
+
+FrodoBolseiro Buffed (ID: 1)
+Ataque = 7
+Vida Atual = 6
+Vida Maxima = 1
+Custo de Mana = 1
+
+FrodoBolseiro Buffed (ID: 1)
+Ataque = 7
+Vida Atual = 6
+Vida Maxima = 1
+Custo de Mana = 1
+
+FrodoBolseiro Buffed Buffed (ID: 1)
+Ataque = 12
+Vida Atual = 13
+Vida Maxima = 1
+Custo de Mana = 1
+
+Para lac3
+
+Legolas (ID: 3)
+Ataque = 8
+Vida Atual = 4
+Vida Maxima = 4
+Custo de Mana = 6
+
+Legolas Buffed (ID: 3)
+Ataque = 13
+Vida Atual = 9
+Vida Maxima = 4
+Custo de Mana = 6
+
+Legolas Buffed (ID: 3)
+Ataque = 13
+Vida Atual = 9
+Vida Maxima = 4
+Custo de Mana = 6
+
+Legolas Buffed Buffed (ID: 3)
+Ataque = 18
+Vida Atual = 16
+Vida Maxima = 4
+Custo de Mana = 6"
+
+
+

@@ -1,0 +1,30 @@
+
+Questão 1-
+Como o número máximo de elementos do vetor de cartas da classe Baralho foi definido em 10, a linguagem java acusa um erro assim que tentamos adicionar o décimo primeiro elemento.
+Esse erro é:
+]"Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10"
+
+
+Questão 2-
+Ao tentarmos comprar uma carta com o Baralho vazio, a linguagem java também emite uma mensagem de erro alertando ao usuário que não há o que comprar.
+Esse erro é:
+"Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1"
+Esse problema ocorre quando o programador não coloca um if que checa a existência de cartas no baralho e a mensagem de erro mostra que o usuário está tentando acessar uma área não reservada na memória para o programa.
+
+
+Questão 3-
+O uso do modificador static faz com que o atributo pertença à propria classe, e não a uma instância de classe. Assim, uma variável static pode ser vista por todos os objetos de uma mesma classe com o mesmo valor.
+O gerador random deve ser uma variável static pois ele obtem um número randomico que será usado por todos os objetos dessa classe. Dessa forma, todas poderão utilizar o gerador e obter o mesmo número dele.
+
+
+Questão 4- 
+O gerador não é inicializado no construtor pois ele adquire um valor aleatório da função "Random" e não cabe ao usuário escolher esse valor.
+Condorme a função "embaralhar" da classe Baralho, nota-se que o gerador muda de valor nCartas-1 vezes, para cada vez que a função embaralhar for chamada.
+
+Questão 5-
+A classe util utiliza vários métodos static que permitem a todos os objetos acessarem seus valores, isso porque eles foram declarados como "public static", ficando vísiveis no restante do código.
+Uma variável final é usada para garantir que não haja modificação indevida do valor dela.
+
+Questão 6-
+Uma variável ArrayList apresenta vantagens que um vetor normal não apresenta, como por exemplo as funções de inverter e embaralhar(shuffle). Além da principal vantagem: enquanto que um vetor apresenta tamanho máximo fixo e pré-determinado, um ArrayList aumenta de tamanho conforme desejo do usuário, dinamicamente.
+
